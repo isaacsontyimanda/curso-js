@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multa</title>
+    <style>
+        body {
+            background-color: #181717;
+            color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label, .btn {
+            cursor: pointer;
+        }
+
+        div {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multa</h1>
+    <label for="txtvel">Velocidade do carro <input type="number" name="txtvel" id="txtvel" placeholder="inserir velocidade">Km/hora</label>
+    <input class="btn" type="button" value="Verificar!" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            let txtv = document.querySelector('input#txtvel')
+            let res = document.querySelector('div#res')
+            let vel = Number(txtv.value)
+            res.innerHTML = (`A sua velocidade é de: ${vel}Km/h`)
+        }
+    </script>
+</body>
+</html>
