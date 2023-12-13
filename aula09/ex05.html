@@ -37,18 +37,21 @@
     <h1>Iniciando estudos do DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <abbr title="Document Object Model (pt: modelo de objectos para documentos)"><strong>DOM</strong></abbr> em JavaScript.</p>
-    <div name="msg">Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     
     <script>
         let corpo = document.body
         let p1 = document.getElementsByTagName('p')[0]
-        let d02 = document.getElementsByName('msg')[0]
-        
-        d02.style.backgroundColor = ('black')
-        d02.style.color = ('aqua')
-        d02.innerHTML = ('JUICE WRLD')
-        d02.style.fontSize = ('4em')
-        d02.style.padding = ('10px')
+        let d1 = document.querySelector('div#msg')
+
+        corpo.style.backgroundColor = ('white')
+        p1.style.color = ('blueviolet')
+        p1.innerHTML = ('Prof. Gustavo Guanabara')
+        d1.innerHTML = ('Amor é um sentimento que não tem uma explicação certa, eu te amo de mais.😍')
+        d1.style.fontSize = ('1.5em')
+        d1.style.color = ('violet')
+
+        document.querySelector('div#msg').innerHTML = ('Já estou dominando.😂😂😂')
     </script>
 </body>
 </html>
