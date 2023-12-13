@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando números</title>
     <style>
-        * {
+        body {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        input {
+            width: 150px;
+            background-color: aqua;
+            color: black;
+            font-size: 1.1em;
+            font-weight: bold;text-align: center;
+
+            border-radius: 5px;
+        }
+
+        .btn01 {
+            cursor: pointer;
+        }
+
+        div#res {
+            width: 479px;
+            background-color: aqua;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 4px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> + 
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-
-    <div id="res">
-
-    </div>
+    <h1>Somador de Valores</h1>
+    <input type="number" name="txtn1" id="txtn1" required placeholder="Digite n1">   
+    <input type="number" name="txtn2" id="txtn2" required placeholder="Digite n2">
+    <input class="btn01" type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado!</div>
 
     <script>
-
         function somar() {
-            let tn1 = document.getElementById('txtn1')
-            let tn2 = document.getElementById('txtn2')
-            let res = document.getElementById('div#res')
-
+            let tn1 = document.querySelector('input#txtn1')
+            let tn2 = document.querySelector('input#txtn2')
             let n1 = Number(tn1.value)
             let n2 = Number(tn2.value)
             let s = n1 + n2
-
-            res.innerHTML = (`O resultado entre ${n1} e ${n2} é igual a ${s}`)
+            document.querySelector('div#res').innerHTML = (`A soma entre ${n1} e ${n2} é igual a: ${s}`)
         }
     </script>
 </body>
