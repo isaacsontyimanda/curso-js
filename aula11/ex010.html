@@ -65,22 +65,23 @@
             margin: 20px;
         }
     </style>
-    <script>
-        function Calcular() {
-            let txtn1 = document.querySelector('input#vel')
-            let vel = Number(txtn1.value)
-            let result = document.querySelector('div#result')
-            if (vel > 80) {
-                result.innerText = (`A sua velocidade é de: ${vel}Km/h. Crlh.😡 Você ultrapassou a velocidade permitida(80Km/h). Multado.⛔`)
+        <script>
+            function Calcular() {
+                let txtn = document.querySelector('input#vel')
+                let vel = Number(txtn.value)
+                let result = document.querySelector('div#result')
+                if (vel > 80) {
+                    result.innerHTML = (`A sua velocidade é de: ${vel}Km/h. <p>Seu disgraçado😡 você passou dos limites permitido (80Km/h). Multado.⛔</p> `)
+                }
+                else {
+                    result.innerText = (`A sua velocidade é de: ${vel}Km/h é razoável😊 continue assim😉`)
+                }
+                result.innerHTML += '<p>E não esquece! use sempre o sinto de segurança.</p>'
             }
-            else {
-                result.innerText = (`A sua velocidade: ${vel}Km/h é razoável.😊 use sempre o cinto de segurança.🫡`)
-            }
-        }
-    </script>
+        </script>
 </head>
 <body>
-    <h1>Centro de controle de Velocidade</h1>
+    <h1>Centro de Controle de Velocidade</h1>
     <input type="number" name="vel" id="vel" required placeholder="inserir velocidade">
     <input class="bot" type="button" value="Calcular" onclick="Calcular()">
     <a class="limp" href="ex010.html">Limpar R</a>
