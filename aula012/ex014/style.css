@@ -8,6 +8,25 @@ body {
     text-shadow: 1px 2px 3px #0000009a;
 }
 
+div.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.container > input {
+    width: 200px;
+    background: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input#env {
+    cursor: pointer;
+}
+
 header {
     text-align: center;
 }
@@ -16,6 +35,7 @@ section {
     width: 500px;
     background: white;
     color: black;
+    text-align: center;
     text-shadow: none;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px #00000020;
