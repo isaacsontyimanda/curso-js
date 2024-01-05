@@ -23,6 +23,11 @@ section {
     margin: auto;
 }
 
+img#imagem {
+    display: block;
+    margin: auto;
+}
+
 footer {
     font-style: italic;
     text-align: center;
