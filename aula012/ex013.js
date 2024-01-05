@@ -1,16 +1,17 @@
 let agora = new Date()
 let DiaSem = agora.getDay()
+DiaSem = 4
 switch(DiaSem) {
     case 0: {
         console.log('Domingo')
         break
     }
-    case 0: {
-        console.log('Domingo')
+    case 1: {
+        console.log('Segunda-feira')
         break
     }
-    case 0: {
-        console.log('Domingo')
+    case 2: {
+        console.log('Terça-feira')
         break
     }
     case 3: {
