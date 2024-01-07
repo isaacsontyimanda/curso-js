@@ -8,25 +8,6 @@ body {
     text-shadow: 1px 2px 3px #0000009a;
 }
 
-div.container {
-    display: flex;
-    justify-content: space-around;
-}
-
-div.container > input {
-    width: 200px;
-    background: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-input#env {
-    cursor: pointer;
-}
-
 header {
     text-align: center;
 }
