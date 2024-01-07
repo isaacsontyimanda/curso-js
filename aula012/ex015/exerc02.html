@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que horas são?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="intera.js"></script>
+</head>
+<body id="fundo" onload="carregar()">
+    <div class="container">
+        <input class="cor" type="number" name="InHora" id="InHora" placeholder="Inserir hora aqui!" >
+        <input class="cor" id="env" type="button" value="Enviar hora" onclick="carregar()">
+    </div>
+    <header>
+        <h1 id="titu">Título</h1>
+    </header>
+    <section>
+        <div id="msg">
+        </div>
+        <div id="foto">
+            <img id="imagem" src="img/dia.png" alt="foto do dia">
+        </div>
+    </section>
+    <footer>
+        <p>&COPY; CursoEmVídeo</p>
+    </footer>
+</body>
+</html>
