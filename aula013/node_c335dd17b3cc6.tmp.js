@@ -5,7 +5,7 @@ let c = 1
 } while (c <= 5)*/
 
 while (c <= 5) {
-    console.log(`Passo ${c`)
+    console.log(`Passo ${c}`)
 }
 
 //Pior solução para criar repetições ou laços.
