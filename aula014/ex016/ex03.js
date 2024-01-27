@@ -12,9 +12,8 @@ function contar() {
         alert('[ERRO] dados inválidos, verifique os dados inseridos e tente novamente...')
     }
     else {
-        alert('[OK] seus dados estão corretos, seu programa começará por favor! precione ENTER ou OK...')
+        result.innerHTML = 'Contando: '
+        for (let c = i ; c <= f ; c += p ) {
+            result.innerHTML += `${c}`}   
     }
-
-    for (let c = i; c <= f; c += p) {
-        result.innerHTML += `${c}`}
     }
