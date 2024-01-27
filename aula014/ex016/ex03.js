@@ -8,12 +8,24 @@ function contar() {
     let f = Number(fim.value)
     let p = Number(passo.value)
 
-    if (i <= 0 || f <= 0 || p <= 0) {
+    if (f <= 0 ) {
         alert('[ERRO] dados inválidos, verifique os dados inseridos e tente novamente...')
     }
     else {
-        result.innerHTML = 'Contando: '
-        for (let c = i ; c <= f ; c += p ) {
-            result.innerHTML += `${c}`}   
+        result.innerHTML = 'Contando: <br>'  
     }
+    if (p <= 0) {
+        alert('Passo inválido, considerando passo: 1')
+        p = 1
+    }
+    if (f > i) { //Contagem Crescente
+        for (let c = i ; c <= f ; c += p ) {
+            result.innerHTML += `\u{1F449} ${c} `} 
+    }
+    if (i > f) { //Contagem Decrescente
+        for (let c = i; c >= f; c-= p) {
+            result.innerHTML += `\u{1F449} ${c} `
+        }
+    }
+        result.innerHTML += `\u{1F3C1}`
     }
