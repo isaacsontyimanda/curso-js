@@ -10,5 +10,5 @@ let pos = num.indexOf(6)
 if (pos == -1) {
     console.log(`[ERRO] vetor não encontrado, tente outro...`)
 }else {
-    console.log(`O vetor está na posição ${pos}`)
+    console.log(`O valor está na posição ${pos}`)
 }
